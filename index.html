@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your E-Shop</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white text-center py-2">
+        <div class="container">
+            <p class="mb-0">Free shipping on all orders over $200! For a limited time only.</p>
+        </div>
+    </header>
+
+    <!-- Navbar Section -->
+     <style>
+       
+
+input:focus {
+    outline-offset: -2px;
+}
+
+ .containersearch {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+  width:100%;
+   
+    margin-top: -1em; 
+    margin-left: -15em; 
+  
+   
+} 
+
+
+
+
+#submitsearch{
+  border: 1px solid rgb(138, 134, 134);
+  margin-left: -82px;
+  padding: 5px;
+  border-radius: 19px;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 8px; 
+  padding-top: 4px;
+
+  display: none;
+  box-shadow: 0 0 1px black;     
+  margin-right:110px;
+}
+
+#searchInput {
+      width: 34%;
+
+      border: 1px solid #000;
+      border-radius: 30px;
+      font-size: 16px;
+      background-color: white;
+      background-image:url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-24.png');
+
+      background-position: 10px 7px;
+      background-repeat: no-repeat;
+      padding: 8px 20px 8px 40px;
+      -webkit-transition: width 0.8s ease-in-out;
+      transition: width 0.8s ease-in-out;
+      outline: none;
+      opacity: 0.9;
+
+    }
+
+     </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">@Your Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class='containersearch'>
+                    <input type="text" id="searchInput" placeholder="Search..">
+                    <div id='submitsearch'>
+                        <span>Search</span>
+                    </div>
+                </div>
+                <div class="right-side-nav ml-auto">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-collapse collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart <span class="badge badge-primary">0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-pad" style="padding-right: 50px;">
+                        <b><a class="nav-link" href="#">Products</a></b>
+                    </li>
+                    <li class="nav-pad" style="padding-right: 50px;">
+                        <b><a class="nav-link" href="#">SALE</a></b>
+                    </li>
+                    <li class="nav-pad">
+                        <b><a class="nav-link" href="#">Inspiration</a></b>
+                    </li>
+                    <li class="nav-pad" style="padding-right: 50px;">
+                        <b><a class="nav-link" href="#">Brands</a></b>
+                    </li>
+                    <li class="nav-pad" style="padding-right: 50px;">
+                        <b><a class="nav-link" href="#">Outlet</a></b>
+                    </li>
+                </ul>
+               
+                
+            </div>
+            
+        </div>
+    </nav>
+    
+
+    <!-- Main Content Section -->
+    <main>
+    
+        <div class="container text-center py-5">
+            <h1 class="text-prop">Tagline describing your e-shop</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+            <a href="#" class="btn btn-primary btn-lg btn-color">SHOP SALES</a>
+            <a href="#" class="btn btn-outline-secondary btn-lg">ALL PRODUCTS</a>
+        </div>
+
+        <!-- Featured Categories -->
+        <div class="container">
+            <div class="row text-center py-4">
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bestsellers</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Seasonal</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Category</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Outlet</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Products Section -->
+        <section class="products">
+            <h2>New products!</h2>
+            <div class="product-list">
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-image">
+                        <div class="product-img">
+                            <img src="t1.jpg" alt="Product Image"/>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <p>Product Name</p>
+                        <p>Description, color, size</p>
+                        <p>
+                            <span class="price">$95</span>
+                            <span class="old-price">$119</span>
+                            <span class="discount">-20%</span>
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+
+        <!-- Promo Box Section -->
+        <div class="container py-4">
+            <div class="jumbotron">
+                <h1 class="display-4">Promo box</h1>
+                <p class="lead">Up to 50% discount on products from Category</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Shop Now</a>
+            </div>
+        </div>
+
+        <!-- Category Highlights Section -->
+        <div class="container py-4">
+            <h2>Category highlights</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product">
+                        <div class="product-image">
+                            <div class="product-img">
+                                <img src="t1.jpg" alt="Product Image"/>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p>Product Name</p>
+                            <p>Description, color, size</p>
+                            <p>
+                                <span class="price">$95</span>
+                                <span class="old-price">$119</span>
+                                <span class="discount">-20%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-3">
+                    <div class="product">
+                        <div class="product-image">
+                            <div class="product-img">
+                                <img src="t1.jpg" alt="Product Image"/>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p>Product Name</p>
+                            <p>Description, color, size</p>
+                            <p>
+                                <span class="price">$95</span>
+                                <span class="old-price">$119</span>
+                                <span class="discount">-20%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product">
+                        <div class="product-image">
+                            <div class="product-img">
+                                <img src="t1.jpg" alt="Product Image"/>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p>Product Name</p>
+                            <p>Description, color, size</p>
+                            <p>
+                                <span class="price">$95</span>
+                                <span class="old-price">$119</span>
+                                <span class="discount">-20%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product">
+                        <div class="product-image">
+                            <div class="product-img">
+                                <img src="t1.jpg" alt="Product Image"/>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <p>Product Name</p>
+                            <p>Description, color, size</p>
+                            <p>
+                                <span class="price">$95</span>
+                                <span class="old-price">$119</span>
+                                <span class="discount">-20%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Discount Categories Section -->
+        <div class="container py-4 text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 style="font-weight: 700;">Category</h2>
+                            <p>Up to  </p>
+                            <h1 style="font-weight: 900;">25%</h1>
+                            <p>discount on products from Category</p>
+                            <a class="btn btn-primary" href="#">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 style="font-weight: 700;">Outlet</h2>
+                            <p>Up to  </p>
+                            <h1 style="font-weight: 900;">50%</h1>
+                            <p>discount on all products</p>
+                            <a class="btn btn-primary" href="#">Browse Products</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="container py-4 text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h2>Grab an extra 5% discount</h2>
+                    <p>Subscribe to monthly newsletter. Get the latest product updates and special offers delivered right to your inbox.</p>
+                    <form class="form-inline justify-content-center">
+                        <input type="email" class="form-control mr-2" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="container py-4">
+            <h2>Our Rating</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            
+                            <h3 class="card-title">Great value and quality</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                            <p class="text-muted">John Doe, 6 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Beautiful design!</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                            <p class="text-muted">John Doe, 6 days ago</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Exactly what I wanted</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+                            <p class="text-muted">John Doe, 6 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Need help?</h5>
+                    <a href="#" class="btn btn-outline-light">Contact Us</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Customer Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Returns & Warranty</a></li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Corporate Info</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Affiliates</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Gift Card</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Buy Gift cards</a></li>
+                        <li><a href="#">Redeem Card</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-4">
+                <small>© 2023 Your Company. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
